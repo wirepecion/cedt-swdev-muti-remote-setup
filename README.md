@@ -3,17 +3,30 @@
 ## **Overview**
 This repository provides an **automated script** for setting up multiple Git remotes in a classroom and personal repository setup. It streamlines the process of cloning a **classroom repository**, configuring Git user details, and adding multiple remote repositories for seamless collaboration.
 
-## **Features**
-✅ Automatically clones the **classroom repository** into the correct directory  
-✅ Extracts the correct repository name from the URL  
-✅ Automatically **configures Git user details** (only asks once)  
-✅ Adds both **classroom and personal repositories** as remotes  
-✅ Ensures the correct remote branch is set  
+⚠️ **Recommendation:** This script should be run in **Git Bash** to ensure compatibility with shell commands.
 
-## **Prerequisites**
-- Git installed on your system (`git --version` to check)
-- A **classroom repository** URL (e.g., `https://github.com/example-classroom/swdev-project.git`)
-- A **personal repository** URL (e.g., `https://github.com/example-user/swdev-project.git`)
+## **Folder Structure**
+
+### **Before Running the Script**
+```
+📂 CLASSROOM_PROJECTS
+   ├── 📂 a01-swdevprac2-exampleuser
+   ├── 📂 a02-swdevprac2-exampleuser
+   ├── 📂 a03-swdevprac2-exampleuser
+   ├── 📂 cedt-swdev-muti-remote-setup
+   │   ├── git_remote_setup.sh   # Setup script is stored here
+```
+
+### **After Running the Script**
+```
+📂 CLASSROOM_PROJECTS
+   ├── 📂 a01-swdevprac2-exampleuser
+   ├── 📂 a02-swdevprac2-exampleuser
+   ├── 📂 a03-swdevprac2-exampleuser
+   ├── 📂 swdev-project          # New cloned repository
+   ├── 📂 cedt-swdev-muti-remote-setup
+   │   ├── git_remote_setup.sh   # Setup script remains here
+```
 
 ## **Installation & Usage**
 
@@ -28,7 +41,7 @@ cd cedt-swdev-muti-remote-setup
 chmod +x git_remote_setup.sh
 ```
 
-### 3. Run the script:
+### 3. Run the script **(in Git Bash)**:
 ```sh
 . git_remote_setup.sh
 ```
@@ -65,31 +78,6 @@ Enter personal repository URL: https://github.com/example-user/swdev-project.git
 Using existing Git config: example-user <example@example.com>
 Cloning into: swdev-project...
 Cloning successful. Changing directory...
-```
-
----
-
-## **Folder Structure**
-
-### **Before Running the Script**
-```
-📂 CLASSROOM_PROJECTS
-   ├── 📂 a01-swdevprac2-exampleuser
-   ├── 📂 a02-swdevprac2-exampleuser
-   ├── 📂 a03-swdevprac2-exampleuser
-   ├── 📂 cedt-swdev-muti-remote-setup
-   │   ├── git_remote_setup.sh   # Setup script is stored here
-```
-
-### **After Running the Script**
-```
-📂 CLASSROOM_PROJECTS
-   ├── 📂 a01-swdevprac2-exampleuser
-   ├── 📂 a02-swdevprac2-exampleuser
-   ├── 📂 a03-swdevprac2-exampleuser
-   ├── 📂 swdev-project          # New cloned repository
-   ├── 📂 cedt-swdev-muti-remote-setup
-   │   ├── git_remote_setup.sh   # Setup script remains here
 ```
 
 ---
