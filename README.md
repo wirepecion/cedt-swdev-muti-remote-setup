@@ -30,7 +30,7 @@ chmod +x git_remote_setup.sh
 
 ### 3. Run the script:
 ```sh
-./git_remote_setup.sh
+. git_remote_setup.sh
 ```
 
 ### 4. Follow the prompts:
