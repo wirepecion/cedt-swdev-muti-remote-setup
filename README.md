@@ -94,6 +94,3 @@ Cloning successful. Changing directory...
 
 ## **License**
 MIT License
-
-## **Author**
-[example-user](https://github.com/example-user)
