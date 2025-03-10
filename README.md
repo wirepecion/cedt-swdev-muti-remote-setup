@@ -25,12 +25,12 @@ cd cedt-swdev-muti-remote-setup
 
 ### 2. Make the script executable:
 ```sh
-chmod +x git_auto_setup.sh
+chmod +x git_remote_setup.sh
 ```
 
 ### 3. Run the script:
 ```sh
-./git_auto_setup.sh
+./git_remote_setup.sh
 ```
 
 ### 4. Follow the prompts:
@@ -72,7 +72,7 @@ Cloning successful. Changing directory...
 ## **Troubleshooting**
 - If the script doesn't persist `cd`, run:
   ```sh
-  source ./git_auto_setup.sh
+  source ./git_remote_setup.sh
   ```
 - To manually check your Git config:
   ```sh
