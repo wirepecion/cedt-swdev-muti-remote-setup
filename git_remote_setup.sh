@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Get the absolute path of the script's directory
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Move to the script's parent directory to ensure cloning at the correct level
+cd "$SCRIPT_DIR/.." || exit
+
 # Get repo URL
 read -p "Enter classroom repository URL: " CLASSROOM_REPO
 read -p "Enter personal repository URL: " PERSONAL_REPO
