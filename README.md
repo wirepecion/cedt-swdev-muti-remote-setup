@@ -69,6 +69,31 @@ Cloning successful. Changing directory...
 
 ---
 
+## **Folder Structure**
+
+### **Before Running the Script**
+```
+📂 CLASSROOM_PROJECTS
+   ├── 📂 a01-swdevprac2-exampleuser
+   ├── 📂 a02-swdevprac2-exampleuser
+   ├── 📂 a03-swdevprac2-exampleuser
+   ├── 📂 cedt-swdev-muti-remote-setup
+   │   ├── git_remote_setup.sh   # Setup script is stored here
+```
+
+### **After Running the Script**
+```
+📂 CLASSROOM_PROJECTS
+   ├── 📂 a01-swdevprac2-exampleuser
+   ├── 📂 a02-swdevprac2-exampleuser
+   ├── 📂 a03-swdevprac2-exampleuser
+   ├── 📂 swdev-project          # New cloned repository
+   ├── 📂 cedt-swdev-muti-remote-setup
+   │   ├── git_remote_setup.sh   # Setup script remains here
+```
+
+---
+
 ## **Troubleshooting**
 - If the script doesn't persist `cd`, run:
   ```sh
